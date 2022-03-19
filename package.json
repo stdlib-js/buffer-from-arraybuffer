@@ -43,7 +43,8 @@
     "@stdlib/assert-is-nonnegative-integer": "^0.0.x",
     "@stdlib/buffer-ctor": "^0.0.x",
     "@stdlib/buffer-from-array": "^0.0.x",
-    "@stdlib/process-node-version": "^0.0.x"
+    "@stdlib/process-node-version": "^0.0.x",
+    "@stdlib/string-format": "^0.0.x"
   },
   "devDependencies": {
     "@stdlib/array-buffer": "^0.0.x",
