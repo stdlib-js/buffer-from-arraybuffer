@@ -1,0 +1,37 @@
+{
+  "name": "@stdlib/buffer-from-arraybuffer",
+  "version": "0.0.0",
+  "description": "Allocate a buffer from an ArrayBuffer.",
+  "license": "Apache-2.0",
+  "type": "module",
+  "main": "./mod.js",
+  "homepage": "https://stdlib.io",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stdlib-js/buffer-from-arraybuffer.git"
+  },
+  "bugs": {
+    "url": "https://github.com/stdlib-js/stdlib/issues"
+  },
+  "keywords": [
+    "stdlib",
+    "stdtypes",
+    "types",
+    "data",
+    "structure",
+    "buffer",
+    "buf",
+    "binary",
+    "octets",
+    "octet",
+    "array",
+    "typed",
+    "typed-array",
+    "allocate",
+    "arraybuffer"
+  ],
+  "funding": {
+    "type": "patreon",
+    "url": "https://www.patreon.com/athan"
+  }
+}
