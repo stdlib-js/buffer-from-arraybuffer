@@ -34,14 +34,30 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/buffer-from-arraybuffer
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import arraybuffer2buffer from 'https://cdn.jsdelivr.net/gh/stdlib-js/buffer-from-arraybuffer@esm/index.mjs';
+var arraybuffer2buffer = require( '@stdlib/buffer-from-arraybuffer' );
 ```
 
 #### arraybuffer2buffer( buf\[, byteOffset\[, length]] )
@@ -49,7 +65,7 @@ import arraybuffer2buffer from 'https://cdn.jsdelivr.net/gh/stdlib-js/buffer-fro
 Allocates a [buffer][@stdlib/buffer/ctor] from an [`ArrayBuffer`][@stdlib/array/buffer].
 
 ```javascript
-import ArrayBuffer from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-buffer@esm/index.mjs';
+var ArrayBuffer = require( '@stdlib/array-buffer' );
 var ab = new ArrayBuffer( 10 );
 
 var buf = arraybuffer2buffer( ab );
@@ -59,7 +75,7 @@ var buf = arraybuffer2buffer( ab );
 By default, the function allocates a [buffer][@stdlib/buffer/ctor] starting from the first byte of the provided [`ArrayBuffer`][@stdlib/array/buffer]. To specify an alternative starting index, provide a `byteOffset`.
 
 ```javascript
-import ArrayBuffer from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-buffer@esm/index.mjs';
+var ArrayBuffer = require( '@stdlib/array-buffer' );
 var ab = new ArrayBuffer( 10 );
 
 var buf = arraybuffer2buffer( ab, 2 );
@@ -72,7 +88,7 @@ var len = buf.length;
 By default, the function allocates a [buffer][@stdlib/buffer/ctor] until the end of the provided [`ArrayBuffer`][@stdlib/array/buffer]. To allocate a specified number of [`ArrayBuffer`][@stdlib/array/buffer] bytes, provide a `length`.
 
 ```javascript
-import ArrayBuffer from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-buffer@esm/index.mjs';
+var ArrayBuffer = require( '@stdlib/array-buffer' );
 var ab = new ArrayBuffer( 10 );
 
 var buf = arraybuffer2buffer( ab, 2, 4 );
@@ -111,17 +127,12 @@ The behavior of this function varies across Node.js versions due to changes in t
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="module">
-
-import ArrayBuffer from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-buffer@esm/index.mjs';
-import Float64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float64@esm/index.mjs';
-import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@esm/index.mjs';
-import IS_LITTLE_ENDIAN from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-little-endian@esm/index.mjs';
-import arraybuffer2buffer from 'https://cdn.jsdelivr.net/gh/stdlib-js/buffer-from-arraybuffer@esm/index.mjs';
+```javascript
+var ArrayBuffer = require( '@stdlib/array-buffer' );
+var Float64Array = require( '@stdlib/array-float64' );
+var randu = require( '@stdlib/random-base-randu' );
+var IS_LITTLE_ENDIAN = require( '@stdlib/assert-is-little-endian' );
+var arraybuffer2buffer = require( '@stdlib/buffer-from-arraybuffer' );
 
 var high;
 var view;
@@ -153,10 +164,6 @@ for ( i = 0; i < view.length; i++ ) {
     }
     console.log( 'Value: %d. High: %d. Low: %d.', view[ i ], high, low );
 }
-
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -197,7 +204,7 @@ for ( i = 0; i < view.length; i++ ) {
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -257,17 +264,17 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/buffer-from-arraybuffer/main/LICENSE
 
-[@stdlib/array/buffer]: https://github.com/stdlib-js/array-buffer/tree/esm
+[@stdlib/array/buffer]: https://github.com/stdlib-js/array-buffer
 
 <!-- <related-links> -->
 
-[@stdlib/buffer/ctor]: https://github.com/stdlib-js/buffer-ctor/tree/esm
+[@stdlib/buffer/ctor]: https://github.com/stdlib-js/buffer-ctor
 
-[@stdlib/buffer/from-array]: https://github.com/stdlib-js/buffer-from-array/tree/esm
+[@stdlib/buffer/from-array]: https://github.com/stdlib-js/buffer-from-array
 
-[@stdlib/buffer/from-buffer]: https://github.com/stdlib-js/buffer-from-buffer/tree/esm
+[@stdlib/buffer/from-buffer]: https://github.com/stdlib-js/buffer-from-buffer
 
-[@stdlib/buffer/from-string]: https://github.com/stdlib-js/buffer-from-string/tree/esm
+[@stdlib/buffer/from-string]: https://github.com/stdlib-js/buffer-from-string
 
 <!-- </related-links> -->
 
