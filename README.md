@@ -52,7 +52,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import arraybuffer2buffer from 'https://cdn.jsdelivr.net/gh/stdlib-js/buffer-from-arraybuffer@deno/mod.js';
+import arraybuffer2buffer from 'https://cdn.jsdelivr.net/gh/stdlib-js/buffer-from-arraybuffer@v0.1.0-deno/mod.js';
 ```
 
 #### arraybuffer2buffer( buf\[, byteOffset\[, length]] )
@@ -127,7 +127,7 @@ import ArrayBuffer from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-buffer@deno
 import Float64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float64@deno/mod.js';
 import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@deno/mod.js';
 import IS_LITTLE_ENDIAN from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-little-endian@deno/mod.js';
-import arraybuffer2buffer from 'https://cdn.jsdelivr.net/gh/stdlib-js/buffer-from-arraybuffer@deno/mod.js';
+import arraybuffer2buffer from 'https://cdn.jsdelivr.net/gh/stdlib-js/buffer-from-arraybuffer@v0.1.0-deno/mod.js';
 
 var high;
 var view;
