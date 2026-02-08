@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/buffer-from-arraybuffer",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "Allocate a buffer from an ArrayBuffer.",
   "license": "Apache-2.0",
   "author": {
@@ -38,23 +38,23 @@
   },
   "dependencies": {
     "@stdlib/array-uint8": "^0.2.2",
-    "@stdlib/assert-is-arraybuffer": "^0.2.2",
-    "@stdlib/assert-is-function": "^0.2.2",
-    "@stdlib/assert-is-nonnegative-integer": "^0.2.2",
+    "@stdlib/assert-is-arraybuffer": "^0.2.3",
+    "@stdlib/assert-is-function": "^0.2.3",
+    "@stdlib/assert-is-nonnegative-integer": "^0.2.3",
     "@stdlib/buffer-ctor": "^0.2.2",
     "@stdlib/buffer-from-array": "^0.2.2",
-    "@stdlib/process-node-version": "^0.2.2",
-    "@stdlib/string-format": "^0.2.2",
-    "@stdlib/error-tools-fmtprodmsg": "^0.2.2"
+    "@stdlib/process-node-version": "^0.2.3",
+    "@stdlib/string-format": "^0.2.3",
+    "@stdlib/error-tools-fmtprodmsg": "^0.2.3"
   },
   "devDependencies": {
     "@stdlib/array-buffer": "^0.2.2",
     "@stdlib/array-float64": "^0.2.2",
     "@stdlib/assert-has-arraybuffer-support": "^0.2.2",
-    "@stdlib/assert-is-buffer": "^0.2.2",
+    "@stdlib/assert-is-buffer": "^0.2.3",
     "@stdlib/assert-is-little-endian": "^0.2.2",
     "@stdlib/math-base-special-pow": "^0.3.0",
-    "@stdlib/random-base-randu": "^0.2.1",
+    "@stdlib/random-base-randu": "^0.2.2",
     "proxyquire": "^2.0.0",
     "tape": "git+https://github.com/kgryte/tape.git#fix/globby",
     "istanbul": "^0.4.1",
